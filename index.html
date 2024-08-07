@@ -6,25 +6,21 @@
   <title>Welcome Page</title>
   <style>
     body, html {
-      height: 70%;
+      height: 100%;
       margin: 0;
       font-family: Arial, sans-serif;
     }
     .bg-image {
       /* The image used */
-      background-image: url(https://i.etsystatic.com/24865000/r/il/a8e375/2497223188/il_1140xN.2497223188_9m3f.jpg); /* Replace with your image */
+      background-image: url(welcome.jpg); /* Replace with your image */
       
       /* Full height */
-      height: 70%;
-      width: 70%;
+      height: 100%;
+      
       /* Center and scale the image */
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      
-      /* Add the blur effect */
-      filter: blur(0px);
-      -webkit-filter: blur(0px);
       
       /* Position text in the middle */
       display: flex;
@@ -34,16 +30,18 @@
     .text {
       background-color: rgba(0, 0, 0, 0.5); /* Black background with transparency */
       color: white;
-      font-size: 25px; /* Change this to your desired font size */
-      padding: 20px;
+      font-size: 20px; /* Adjust this size as needed */
+      padding: 10px;
       border-radius: 10px;
+      text-align: center; /* Center the text */
+      max-width: 80%; /* Ensure text doesn't overflow on small screens */
     }
   </style>
 </head>
 <body>
   <div class="bg-image">
     <a href="Doc6.pdf" id="autoLink">
-      <div class="text">.</div>
+      <div class="text">Welcome to MARAHEB COFFEE SHOP PLEASE CLICK ===> THE LINK FOR MORE INFO</div>
     </a>
   </div>
 
