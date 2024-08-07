@@ -1,6 +1,18 @@
 <html>
 <head>
   <style>
+    .container {
+      position: relative;
+      text-align: center;
+      color: white; /* Change text color as needed */
+    }
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 25px; /* Change this to your desired font size */
+    }
     .welcome-image {
       width: 300px; /* Adjust the width as needed */
       height: auto; /* Maintain aspect ratio */
@@ -8,9 +20,12 @@
   </style>
 </head>
 <body>
-  <p><a href="Doc6.pdf" id="autoLink">
-    <img src="welcome_image.jpg" alt="Welcome to MARAHEB COFFEE SHOP" class="welcome-image">
-  </a></p>
+  <div class="container">
+    <a href="Doc6.pdf" id="autoLink">
+      <img src="welcome_image.jpg" alt="Welcome to MARAHEB COFFEE SHOP" class="welcome-image">
+      <div class="centered">Welcome to MARAHEB COFFE SHOP PLEASE CLICK ===>THE LINK FOR MORE INFO</div>
+    </a>
+  </div>
   
   <script>
     // Automatically open the link after the page loads
