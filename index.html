@@ -2,11 +2,8 @@
 <head>
   <style>
     .container {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 40px; /* Change this to your desired font size */
+      position: relative;
+      text-align: center;
       color: white; /* Change text color as needed */
     }
     .centered {
@@ -18,21 +15,26 @@
     }
     .welcome-image {
       width: 600px; /* Adjust the width as needed */
-      height: 600px; /* Maintain aspect ratio */
+      height: auto; /* Maintain aspect ratio */
     }
   </style>
 </head>
 <body>
   <div class="container">
     <a href="Doc6.pdf" id="autoLink">
-      <img src="https://i.etsystatic.com/24865000/r/il/a8e375/2497223188/il_1140xN.2497223188_9m3f.jpg" alt="">
-      <div class="centered">Welcome</div>
+      <img src="welcome_image.jpg" alt="Welcome to MARAHEB COFFEE SHOP" class="welcome-image">
+      <div class="centered">Welcome to MARAHEB COFFE SHOP PLEASE CLICK ===>THE LINK FOR MORE INFO</div>
     </a>
   </div>
   
   <script>
     // Automatically open the link after the page loads
     window.onload = function() {
+      document.getElementById('autoLink').click();
+    };
+  </script>
+</body>
+</html>
       document.getElementById('autoLink').click();
     };
   </script>
