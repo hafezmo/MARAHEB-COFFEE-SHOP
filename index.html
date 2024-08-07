@@ -1,40 +1,55 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Page</title>
   <style>
-    .container {
-      position: relative;
-      text-align: center;
-      color: white; /* Change text color as needed */
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
     }
-    .centered {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+    .bg-image {
+      /* The image used */
+      background-image: url("welcome_image.jpg"); /* Replace with your image */
+      
+      /* Full height */
+      height: 100%;
+      
+      /* Center and scale the image */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+      /* Add the blur effect */
+      filter: blur(0px);
+      -webkit-filter: blur(0px);
+      
+      /* Position text in the middle */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .text {
+      background-color: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+      color: white;
       font-size: 25px; /* Change this to your desired font size */
-    }
-    .welcome-image {
-      width: 600px; /* Adjust the width as needed */
-      height: auto; /* Maintain aspect ratio */ 
+      padding: 20px;
+      border-radius: 10px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="bg-image">
     <a href="Doc6.pdf" id="autoLink">
-      <img src="welcome.jpg" alt="">
-      <div class="centered">Welcome to MARAHEB COFFE SHOP PLEASE CLICK ===>THE LINK FOR MORE INFO</div>
+      <div class="text">Welcome to MARAHEB COFFEE SHOP PLEASE CLICK ===> THE LINK FOR MORE INFO</div>
     </a>
   </div>
-  
+
   <script>
     // Automatically open the link after the page loads
     window.onload = function() {
-      document.getElementById('autoLink').click();
-    };
-  </script>
-</body>
-</html>
       document.getElementById('autoLink').click();
     };
   </script>
