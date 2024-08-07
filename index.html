@@ -1,3 +1,19 @@
 <html>
-<p><a href="Doc6.pdf">Welcome to MARAHEB COFFE SHOP PLEASE CLICK ===>THE LINK FOR MORE INFO</a></p>
+<head>
+  <style>
+    .welcome-text {
+      font-size: 25px; /* Font size set to 25px */
+    }
+  </style>
+</head>
+<body>
+  <p><a class="welcome-text" href="Doc6.pdf" id="autoLink">Welcome to MARAHEB COFFE SHOP PLEASE CLICK ===>THE LINK FOR MORE INFO</a></p>
+  
+  <script>
+    // Automatically open the link after the page loads
+    window.onload = function() {
+      document.getElementById('autoLink').click();
+    };
+  </script>
+</body>
 </html>
