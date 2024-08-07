@@ -6,23 +6,22 @@
   <title>Welcome Page</title>
   <style>
     body, html {
-      height: 70%;
+      height: 100%;
       margin: 0;
       font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .bg-image {
-      /* The image used */
+      /* Container with the specified dimensions */
+      position: relative;
+      width: 1140px;
+      height: 572px;
       background-image: url(welcome.jpg); /* Replace with your image */
-      
-      /* Full height */
-      height: 1140px;
-      width: 572px;
-      /* Center and scale the image */
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      
-      /* Position text in the middle */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -41,7 +40,7 @@
 <body>
   <div class="bg-image">
     <a href="Doc6.pdf" id="autoLink">
-      <div class="text"></div>
+      <div class="text">Welcome to MARAHEB COFFEE SHOP PLEASE CLICK ===> THE LINK FOR MORE INFO</div>
     </a>
   </div>
 
