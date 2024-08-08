@@ -14,16 +14,13 @@
       align-items: center;
     }
     .bg-image {
-      /* Container that scales for mobile devices */
-      position: relative;
-      width: 100%; /* Full width for responsive design */
-      max-width: 1140px; /* Maximum width */
-      height: auto;
-      aspect-ratio: 1140 / 572; /* Maintains aspect ratio */
+      /* Resize the image */
+      width: 300px; /* Set your desired width */
+      height: 200px; /* Set your desired height */
       background-image: url(welcome.jpg); /* Replace with your image */
       background-position: center;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: cover; /* Ensures the image covers the area */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -31,11 +28,10 @@
     .text {
       background-color: rgba(0, 0, 0, 0.5); /* Black background with transparency */
       color: white;
-      font-size: 20px; /* Adjust this size as needed */
+      font-size: 20px;
       padding: 10px;
       border-radius: 10px;
-      text-align: center; /* Center the text */
-      max-width: 80%; /* Ensure text doesn't overflow on small screens */
+      text-align: center;
     }
   </style>
 </head>
@@ -47,7 +43,6 @@
   </div>
 
   <script>
-    // Automatically open the link after the page loads
     window.onload = function() {
       document.getElementById('autoLink').click();
     };
