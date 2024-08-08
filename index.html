@@ -14,11 +14,13 @@
       align-items: center;
     }
     .bg-image {
-      /* Container with the specified dimensions */
+      /* Container that scales for mobile devices */
       position: relative;
-      width: 800px;
-      height: 572px;
-      background-image: url(welcome1.jpg); /* Replace with your image */
+      width: 100%; /* Full width for responsive design */
+      max-width: 1140px; /* Maximum width */
+      height: auto;
+      aspect-ratio: 1140 / 572; /* Maintains aspect ratio */
+      background-image: url('welcome.jpg'); /* Replace with your image */
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -40,7 +42,7 @@
 <body>
   <div class="bg-image">
     <a href="Doc6.pdf" id="autoLink">
-      <div class="text">==></div>
+      <div class="text"></div>
     </a>
   </div>
 
